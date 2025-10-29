@@ -186,14 +186,13 @@
 
         .main-section { padding: 30px 0; }
         .card { background: var(--card-bg-color); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; transition: background-color 0.3s; }
-        .placeholder-img { width: 100%; background-color: #e9ecef; background-position: center; background-size: cover; }
-        .placeholder-img img { width: 100%; height: auto; display: block; }
+        .placeholder-img { background-color: black; height: 200px;}
         .btn { background: var(--button-bg-color); color: #fff; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; text-transform: uppercase; font-weight: 500; transition: background 0.2s; }
         .btn:hover { background: var(--button-hover-bg-color); }
         .hero-section { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; margin-bottom: 30px; }
         .decree-card .placeholder-img { height: 160px; }
-        .decree-content { padding: 20px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 16px; }
-        .decree-content img { order: 1; }
+        .decree-content { text-align: center; flex-grow: 1; display: flex; flex-direction: column; align-items: center; gap: 16px;}
+        .decree-content img{margin-top: 50px;}
         .decree-title { order: 2; font-size: 14px; text-transform: uppercase; font-weight: bold; margin-top: 0; line-height: 1.4; word-break: break-word; hyphens: auto; }
         .decree-content .btn { order: 3; }
         .main-card { position: relative; }
@@ -303,6 +302,7 @@
             .decree-card .placeholder-img { height: auto; }
             .decree-content { padding: 16px; gap: 12px; }
             .decree-title { font-size: 13px; }
+            .decree-title img {margin-bottom: 100px;}
             .news-card { padding: 16px; }
             .services-row { gap: 16px; }
             .service-item { width: 45%; }
@@ -364,55 +364,55 @@
 
     <nav class="nav">
         <div class="container nav-content">
-            <a href="#" class="active">Главная</a>
-            <a href="#">О нас</a>
-            <a href="#">Умный Город</a>
-            <a href="#">Новости</a>
-            <a href="#">Постановления</a>
-            <a href="#">Отзывы и пожелания</a>
+            <a href="#" class="active">Асосӣ</a>
+            <a href="#">Дар бораи мо</a>
+            <a href="#">Шаҳри Интеллектуалӣ</a>
+            <a href="#">Ахбор</a>
+            <a href="#">Қарорҳо</a>
+            <a href="#">Шарҳҳо ва хоҳишҳо</a>
         </div>
     </nav>
 
     <main class="main-section container">
         <section class="hero-section">
             <div class="decree-card card article-trigger"
-                 data-title="Постановление Председателя Города Душанбе"
+                 data-title="Қарори Раиси шаҳри Душанбе"
                  data-image-src="assets/logo-smart-city.png"
-                 data-description="Это постановление касается улучшения городской инфраструктуры и внедрения новых стандартов в строительстве. Основное внимание уделяется развитию 'умных' районов, повышению энергоэффективности зданий и созданию более комфортной и безопасной среды для жителей Душанбе.">
+                 data-description="Ин қарор ба беҳтар кардани инфрасохтори шаҳр ва ҷорӣ кардани стандартҳои нав дар сохтмон дахл дорад. Диққати асосӣ ба рушди 'минтақаҳои оқил', баланд бардоштани самаранокии энергетикии биноҳо ва фароҳам овардани муҳити бароҳаттар ва бехатар барои Сокинони Душанбе равона карда шудааст.">
                 <div class="placeholder-img">
                     <img src="./assets/presidentEmomaliRahmon.jpg" alt="President of Tajikistan Emomali Rahmon" loading="lazy" width="100%" height="">
                 </div>
                 <div class="decree-content">
-                    <div class="decree-title">Постановление<br>Председателя Города Душанбе</div>
-                    <img src="./assets/tjk.png" width="150" height="150" style="margin:0 auto">
-                    <button class="btn">Подробнее</button>
+                    <img src="./assets/tjk.png" width="150" height="150">
+                    <div class="decree-title">Қарори <br>Раиси шаҳри Душанбе</div>
+                    <button class="btn">Муфассалтар</button>
                 </div>
             </div>
             <div class="main-card card article-trigger"
-                 data-title="Поздравляем с Днём Государственной Независимости Республики Таджикистан"
+                 data-title="Рӯзи Истиқлолияти Давлатии Ҷумҳурии Тоҷикистон муборак бод"
                  data-image-src="https://via.placeholder.com/800x400/A98963/FFFFFF?text=Independence+Day"
-                 data-description="Государственная независимость – это символ свободы, суверенитета и национального достоинства. Благодаря мудрой и дальновидной политике Лидера нации, уважаемого Эмомали Рахмона, наш любимый Таджикистан достиг значительных успехов на пути развития и процветания. Этот день знаменует собой новую эру в истории нации, полную достижений в экономике, культуре и социальной сфере. Мы призываем всех граждан объединиться для дальнейшего укрепления нашего государства.">
+                 data-description="Истиқлолияти давлатӣ рамзи озодӣ, соҳибихтиерӣ ва шаъну шарафи миллӣ мебошад. Бо шарофати сиесати хирадмандона ва дурандешонаи Пешвои миллат Муҳтарам Эмомалӣ Раҳмон Тоҷикистони азизамон дар роҳи рушду шукуфоӣ ба комебиҳои назаррас ноил гардиданд. Ин рӯз як давраи нав дар таърихи миллат аст, ки пур аз дастовардҳо дар иқтисодиет, фарҳанг ва соҳаи иҷтимоӣ мебошад. Мо аз ҳамаи шаҳрвандон даъват менамоем, ки барои таҳкими минбаъдаи давлатамон муттаҳид шаванд.">
                 <div class="placeholder-img">
-                    <img src="./assets/INDEPENDENCE-DAY.jpg" alt="Independence day 9 of September" loading="lazy" width="100%" height="300">
+                    <img src="./assets/9-сентябр-2025-2000x1200.jpg" alt="Independence day 9 of September" loading="lazy" width="100%" height="300">
                 </div>
                 <div class="date-badge">09-09-2025</div>
                 <div class="main-content">
-                    <h2>Поздравляем с Днём Государственной Независимости Республики Таджикистан</h2>
-                    <p>Государственная независимость – это символ свободы, суверенитета и национального достоинства...</p>
-                    <button class="btn">Подробнее</button>
+                    <h2>Рӯзи Истиқлолияти Давлатии Ҷумҳурии Тоҷикистон муборак бод</h2>
+                    <p>Истиқлолияти давлатӣ рамзи озодӣ, соҳибихтиерӣ ва шаъну шарафи миллӣ мебошад...</p>
+                    <button class="btn">Муфассалтар</button>
                 </div>
             </div>
             <div class="decree-card card article-trigger"
-                 data-title="Постановление о цифровизации городских услуг"
+                 data-title="Қарор дар бораи рақамисозии хадамоти шаҳрӣ"
                  data-image-src="https://via.placeholder.com/800x400/cccccc/000000?text=Decree+Image+2"
-                 data-description="Новое постановление направлено на ускорение процесса цифровизации государственных и муниципальных услуг. Цель - сделать взаимодействие граждан с властью максимально простым, быстрым и прозрачным. Проект включает в себя запуск единого портала городских услуг, мобильного приложения и сети многофункциональных центров нового поколения.">
+                 data-description="Қарори нав ба суръат бахшидан ба раванди рақамисозии хадамоти давлатӣ ва коммуналӣ нигаронида шудааст. Мақсад аз он иборат аст, ки ҳамкории шаҳрвандон бо ҳукумат то ҳадди имкон содда, зуд ва шаффоф бошад. Лоиҳа оғози портали ягонаи хидматрасонии шаҳрӣ, барномаи мобилӣ ва шабакаи марказҳои бисерфунксионалии насли навро дар бар мегирад.">
                 <div class="placeholder-img">
                     <img src="./assets/MayorRustamiEmomali.jpg" alt="Mayor Tajikistan Rustami Emomali" loading="lazy" width="100%">
                 </div>
                 <div class="decree-content">
-                    <div class="decree-title">Постановление<br>Председателя Города Душанбе</div>
-                    <img src="./assets/dushanbe.svg" width="150" height="150" style="margin:0 auto">
-                    <button class="btn">Подробнее</button>
+                    <div class="decree-title">Қарори<br>Раиси шаҳри Душанбе </div>
+                    <img src="./assets/dushanbe.svg" width="150" height="150">
+                    <button class="btn">Муфассалтар</button>
                 </div>
             </div>
         </section>
@@ -424,7 +424,7 @@
                  data-description="На международной выставке высоких технологий было подписано ключевое соглашение между Таджикистаном и Объединенными Арабскими Эмиратами. Документ предусматривает совместную работу над развитием технологий искусственного интеллекта, создание национального кластера вычислений и обмен опытом в области машинного обучения и анализа больших данных. Этот шаг, сделанный под патронажем президента Эмомали Рахмона, открывает новые горизонты для технологического развития страны.">
                 <div class="placeholder-img"></div>
                 <div class="news-content">
-                    <h3>Таджикистан и ОАЭ подписали соглашение о сотрудничестве в сфере ИИ</h3>
+                    <h3>Тоҷикистон ва АМА созишномаи ҳамкорӣ дар СОҲАИ AI ро имзо карданд</h3>
                     <div class="news-date">2025-08-27</div>
                 </div>
             </div>
@@ -434,7 +434,7 @@
                  data-description="В рамках программы 'Умный город' начинается пилотный проект по внедрению искусственного интеллекта в систему управления городским хозяйством. Технологии ИИ будут использоваться для оптимизации транспортных потоков, мониторинга экологической обстановки и прогнозирования нагрузки на коммунальные сети. Ожидается, что это позволит повысить эффективность работы городских служб и снизить затраты.">
                 <div class="placeholder-img"></div>
                 <div class="news-content">
-                    <h3>Таджикистан и ОАЭ подписали соглашение о сотрудничестве в сфере ИИ</h3>
+                    <h3>Тоҷикистон ва АМА созишномаи ҳамкорӣ дар СОҲАИ AI ро имзо карданд</h3>
                     <div class="news-date">2025-08-27</div>
                 </div>
             </div>
@@ -444,7 +444,7 @@
                  data-description="Министерство образования и науки объявляет о запуске серии бесплатных образовательных программ по искусственному интеллекту для студентов и старшеклассников. Курсы будут охватывать основы программирования, машинного обучения и анализа данных. Цель инициативы – подготовить новое поколение специалистов, способных работать с передовыми технологиями и вносить вклад в цифровую трансформацию Таджикистана.">
                 <div class="placeholder-img"></div>
                 <div class="news-content">
-                    <h3>Таджикистан и ОАЭ подписали соглашение о сотрудничестве в сфере ИИ</h3>
+                    <h3>Тоҷикистон ва АМА созишномаи ҳамкорӣ дар СОҲАИ AI ро имзо карданд</h3>
                     <div class="news-date">2025-08-27</div>
                 </div>
             </div>
@@ -454,7 +454,7 @@
                  data-description="В рамках программы 'Умный город' начинается пилотный проект по внедрению искусственного интеллекта в систему управления городским хозяйством. Технологии ИИ будут использоваться для оптимизации транспортных потоков, мониторинга экологической обстановки и прогнозирования нагрузки на коммунальные сети. Ожидается, что это позволит повысить эффективность работы городских служб и снизить затраты.">
                 <div class="placeholder-img"></div>
                 <div class="news-content">
-                    <h3>Таджикистан и ОАЭ подписали соглашение о сотрудничестве в сфере ИИ</h3>
+                    <h3>Тоҷикистон ва АМА созишномаи ҳамкорӣ дар СОҲАИ AI ро имзо карданд</h3>
                     <div class="news-date">2025-08-27</div>
                 </div>
             </div>
@@ -462,17 +462,17 @@
 
         <section class="services-section">
             <div class="services-row">
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-car-side"></i></div><p>Умный транспорт</p></div>
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div><p>Умная энергия</p></div>
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div><p>Умная медицина</p></div>
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-building-columns"></i></div><p>Электронное правительство</p></div>
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-house-signal"></i></div><p>Умный дом</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-car-side"></i></div><p>Нақлиети интеллектуалӣ</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div><p>Энергияи оқилона</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div><p>Тибби оқилона</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-building-columns"></i></div><p>Ҳукумати электронӣ</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-house-signal"></i></div><p>Хонаи интеллектуалӣ</p></div>
             </div>
             <div class="services-row">
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div><p>Цифровая экономика</p></div>
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div><p>Умная безопасность</p></div>
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-seedling"></i></div><p>Умная экология</p></div>
-                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-brain"></i></div><p>Цифровое образование</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div><p>Иқтисоди рақамӣ</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div><p>Амнияти оқилона</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-seedling"></i></div><p>Экологияи оқилона</p></div>
+                <div class="service-item"><div class="service-icon"><i class="fa-solid fa-brain"></i></div><p>Таълими рақамӣ</p></div>
             </div>
         </section>
 
@@ -502,10 +502,10 @@
             </div>
             <div class="footer-contacts">
                 <h3>Контакты</h3>
-                <p>Исполнительный орган государственной власти города Душанбе.<br>Государственное унитарное предприятие «Умный город».<br>Адрес: Улица М. Курбонова 25.<br>Тел./Факс: +992 (37) 2274745, (+992) 987 32 20 20<br>Эл. почта: info@dsc.tj</p>
+                <p>Мақомоти иҷроияи ҳокимияти давлатии Шаҳри Душанбе.<br>Корхонаи воҳиди давлатии "Шаҳри Оқил".<br>Суроға: Кӯчаи М.Курбонов 25.<br>Тел./Факс: +992 (37) 2274745, (+992) 987 32 20 20<br>Эл. почта: info@dsc.tj</p>
             </div>
             <div class="footer-social">
-                <h3>Социальные сети</h3>
+                <h3>Шабакаҳои иҷтимоӣ</h3>
                 <div class="social-links">
                     <a href="#" class="social-link telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
                     <a href="#" class="social-link twitter" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
